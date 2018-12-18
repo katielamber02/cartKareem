@@ -8,18 +8,76 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color:lightgreen;
   min-height: 100vh;
-  display: flex;
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:black;
+  
 }
 
+.column{
+  font-size: medium;
+  columns: 300px auto;
+  column-gap:20px;
+  column-rule:2px dotted royalblue;
+
+}
+#id1{
+  width:100%;
+  height: 100px;
+  background: #8ae296;
+    
+  background: repeating-radial-gradient(center, ellipse farthest-corner, #f39508 0%,#05b15b 100%);
+  padding: 10px;
+    
+}
+
+#id2{
+  border:1px #181716 solid;
+  padding:10px;
+  font-size:1em;
+  cursor:pointer;
+  width:300px;
+  transition:width 2s,font-size 2s;
+}
+#id2:hover{
+  font-size:4em;
+  width:500px;
+}
+input:default{
+  background-color: aqua;
+}
+h2{
+  font-size: small;
+}
+h2::first-letter{
+  font-size:20px;
+  color:red;
+}
+h2.cat::after{
+  content:url(1234.gif);
+}
+p::before{
+  content:url(123.gif);
+}
+p::selection{
+  background-color: rgb(150, 255, 80);
+  color:white;
+}
+p::first-line{
+  color:red;
+  font-style:italic;
+  font-weight:bold;
+}
+.p-styles{
+  text-shadow:5px 5px 10px #61da;
+}
 .App-link {
-  color: #61dafb;
+  color: #1391b4;
 }
 
 @keyframes App-logo-spin {
@@ -29,4 +87,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+.wrapper{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-wrapper{
+  flex-basis: 24%;
+  margin-bottom: 20px;
+}
+.product-name{
+  margin: 10px 0;
+}
+.product-image{
+  width:100px;
+  height:100px;
 }
